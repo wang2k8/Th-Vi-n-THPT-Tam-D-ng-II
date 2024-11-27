@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THPT Tam Dương II - Thư viện</title>
+    <link rel="icon" href="logo.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Header with Logo -->
+    <header>
+        <div class="header-container">
+            <img src="logo.png" alt="Logo THPT Tam Dương II" class="logo">
+            <h1>THPT Tam Dương II - Thư viện</h1>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="form-container">
+            <h2>Nhập Thông Tin Mượn Sách</h2>
+            <form id="borrow-form">
+                <label for="book-name">Tên Sách:</label>
+                <input type="text" id="book-name" required>
+
+                <label for="author">Tác Giả:</label>
+                <input type="text" id="author" required>
+
+                <label for="borrower">Người Mượn:</label>
+                <input type="text" id="borrower" required>
+
+                <label for="class">Lớp:</label>
+                <input type="text" id="class" required>
+
+                <label for="borrow-date">Ngày Mượn:</label>
+                <input type="date" id="borrow-date" required>
+
+                <label for="days-borrowed">Số Ngày Mượn:</label>
+                <input type="number" id="days-borrowed" required>
+
+                <button type="submit">Thêm Sách</button>
+            </form>
+        </div>
+
+        <div class="table-container">
+            <h2>Bảng Quản Lý Sách</h2>
+            <table id="book-table">
+                <thead>
+                    <tr>
+                        <th>Tên Sách</th>
+                        <th>Tác Giả</th>
+                        <th>Người Mượn</th>
+                        <th>Lớp</th>
+                        <th>Ngày Mượn</th>
+                        <th>Số Ngày Mượn</th>
+                        <th>Ngày Trả</th>
+                        <th>Tình Trạng</th>
+                        <th>Chỉnh Sửa</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- Edit Box -->
+    <div id="edit-box" class="edit-box">
+        <div class="edit-content">
+            <span id="close-edit-box" class="close-btn">&times;</span>
+            <h3>Chỉnh Sửa Thông Tin Sách</h3>
+            <form id="edit-form">
+                <label for="edit-book-name">Tên Sách:</label>
+                <input type="text" id="edit-book-name">
+
+                <label for="edit-author">Tác Giả:</label>
+                <input type="text" id="edit-author">
+
+                <label for="edit-borrower">Người Mượn:</label>
+                <input type="text" id="edit-borrower">
+
+                <label for="edit-class">Lớp:</label>
+                <input type="text" id="edit-class">
+
+                <label for="edit-borrow-date">Ngày Mượn:</label>
+                <input type="date" id="edit-borrow-date">
+
+                <label for="edit-days-borrowed">Số Ngày Mượn:</label>
+                <input type="number" id="edit-days-borrowed">
+
+                <label for="edit-return-date">Ngày Trả:</label>
+                <input type="date" id="edit-return-date">
+
+                <label for="edit-status">Tình Trạng:</label>
+                <input type="text" id="edit-status">
+
+                <button type="submit">Cập Nhật</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 - Wang2k8 / THPT Tam Dương II.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
